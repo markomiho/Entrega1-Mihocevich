@@ -21,7 +21,5 @@ from MVT_MarkoMihocevich.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', vista_saludo),
-    path("hoy/", dia_hoy)
-    
+    path("entries", index),
     ]
