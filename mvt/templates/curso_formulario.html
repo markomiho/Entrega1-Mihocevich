@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+
+<form action="cursos-crear" method="post">
+    {% csrf_token %}
+
+    <p>
+        curso <input type="text" name="curso">
+    </p> 
+
+    <p>
+        camada <input type="number" name="camada">
+    </p>
+
+    <input type="submit" value="Crear curso">
+
+
+</form>
+
+{% endblock %}

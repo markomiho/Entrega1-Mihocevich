@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+<h1>Alumnos registrados</h1>
+{% for entry in entries %}
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>{{ entry.nombre }}</strong>
+                        <strong>{{ entry.apellido }}</strong>
+                        <strong>{{ entry.email }}</strong>
+                    </p>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+{% endblock %}

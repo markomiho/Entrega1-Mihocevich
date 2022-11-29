@@ -21,5 +21,12 @@ from MVT_MarkoMihocevich.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("entries", index),
+    path("Alumnos", index, name="coder-index"),
+    path("Cursos", cursos, name="coder-sala"),
+    path("cursos-crear", creacion_curso, name="coder-cursos-crear"),
+    path("Inicio", inicio, name="coder-inicio"),
+    path("profesores-crear", creacion_profesores, name="coder-profesores-crear"),
+    path("cursos-buscar", buscar_curso, name="coder-cursos-buscar"),
+    path("cursos-buscar-resultados", resultado_busqueda_cursos, name="coder-cursos-buscar-resultados"),
+    path("crear-alumno", creacion_alumnos, name="coder-creacion-alumnos" )
     ]
